@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="top">
+            <div class="header container">
+                <div class="header_left">
+                    <a href="index.html" class="brand"><img src="img/brand.svg" alt="brand"></a>
+                    <div class="search">
+                        <search-form></search-form>
+                    </div>
+                </div>
+                <nav class="header_right">
+                        <details class="menu_details">
+                            <summary><img src="img/menu.svg" alt="menu"></summary>
+                            <div class="mega_box">
+                                <a class="menu_head" href="menu.html">MENU</a>
+                                <nav class="item_flex">
+                                    <a class="mega_hedding" href="menu.html">MAN</a>
+                                    <a class="mega_link" href="#">Accessories</a>
+                                    <a class="mega_link" href="#">Bags</a>
+                                    <a class="mega_link" href="#">Denim</a>
+                                    <a class="mega_link" href="#">T-Shirts</a>
+                                </nav>
+                                <nav class="item_flex">
+                                    <a class="mega_hedding" href="menu.html">WOMAN</a>
+                                    <a class="mega_link" href="#">Accessories</a>
+                                    <a class="mega_link" href="#">Jackets & Coats</a>
+                                    <a class="mega_link" href="#">Polos</a>
+                                    <a class="mega_link" href="#">T-Shirts</a>
+                                    <a class="mega_link" href="#">Shirts</a>
+                                </nav>
+                                <nav class="item_flex">
+                                    <a class="mega_hedding" href="menu.html">KIDS</a>
+                                    <a class="mega_link" href="#">Accessories</a>
+                                    <a class="mega_link" href="#">Jackets & Coats</a>
+                                    <a class="mega_link" href="#">Polos</a>
+                                    <a class="mega_link" href="#">T-Shirts</a>
+                                    <a class="mega_link" href="#">Shirts</a>
+                                    <a class="mega_link" href="#">Bags</a>
+                                </nav>
+                            </div>
+                        </details>
+                    <a href="#" class="regist"><img src="img/contact.svg" alt="registration"></a>
+                    <div class="basket">
+                        <basket ref="basket"></basket>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center_none"></div>
+            <div class="heading">
+                <span class="element"></span>
+                <div class="name">
+                    <h1 class="center_header">THE BRAND</h1>
+                    <p class="center_text">OF LUXERIOUS <span class="center_text center_text_mini">FASHION</span></p>
+                </div>
+            </div>
+        </div>
+        <section class="menu container">
+            <div class="clothes_parent">
+                <div class="clothes">
+                    <a href="menu.html">
+                        <img class="clothes_img" src="img/women.png" alt="for women">
+                        <p class="clothes_text">30% OFF<br><span class="clothes_text_for">FOR WOMEN</span></p>
+                    </a>
+                </div>
+                <div class="clothes">
+                    <a href="menu.html">
+                        <img class="clothes_img" src="img/men.png" alt="for men">
+                        <p class="clothes_text">HOT DEAL<br><span class="clothes_text_for">FOR MEN</span></p>
+                    </a>
+                </div>
+                <div class="clothes">
+                    <a href="menu.html">
+                        <img class="clothes_img" src="img/kids.png" alt="for kids">
+                        <p class="clothes_text">NEW ARRIVALS<br><span class="clothes_text_for">FOR KIDS</span></p>
+                    </a>
+                </div>
+            </div>
+            <div class="accesories">
+                <div class="clothes_mini">
+                    <a href="menu.html">
+                        <img class="accesories_img" src="img/accesorise.png" alt="accesories">
+                        <p class="accesories_text">LUXIROUS & TRENDY<br><span class="accesories_text_for">ACCESORIES</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="items_section">
+            <div class="items container">
+                <h2 class="items_header">Fetured Items</h2>
+                <p class="items_text">Shop for items based on what we featured in this week</p>
+                <products ref="products"></products>
+                <form class="items_button_form">
+                    <button class="items_button" type="submit"><span class="items_button_text">Browse All
+                            Product</span></button>
+                </form>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="footer_top_box">
+                <div class="delivery container">
+                    <div class="information">
+                        <a class="footer_top_link" href="#">
+                            <img src="img/delivery.svg" alt="delivery">
+                            <div class="footer_top_text">
+                                <h2 class="footer_top_head">Free Delivery</h2>
+                                <p class="footer_top_inf">Worldwide delivery on all. Authorit tively morph next-generation
+                                    innov
+                                    tion with extensive models.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="information">
+                        <a class="footer_top_link" href="#">
+                            <img src="img/sales.svg" alt="sales">
+                            <div class="footer_top_text_middle">
+                                <h2 class="footer_top_head">Sales & discounts</h2>
+                                <p class="footer_top_inf">Worldwide delivery on all. Authorit tively morph next-generation
+                                    innov tion with
+                                    extensive models.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="information">
+                        <a class="footer_top_link" href="#">
+                            <img src="img/quality.svg" alt="quality">
+                            <div class="footer_top_text">
+                                <h2 class="footer_top_head">Quality assurance</h2>
+                                <p class="footer_top_inf">Worldwide delivery on all. Authorit tively morph next-generation
+                                    innov tion with
+                                    extensive models.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_center">
+                <div class="feedback container">
+                    <div class="footer_center_left">
+                        <img class="feedback_photo" src="img/photo.png" alt="photo">
+                        <p class="footer_center_left_desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            <i>pulvinar
+                                purus condimentum“</i>
+                        </p>
+                    </div>
+                    <div class="footer_center_right">
+                        <h3 class="footer_center_right_head">SUBSCRIBE</h3>
+                        <p class="footer_center_right_desc">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="feedback_submit">
+                            <input class="email" type="email" placeholder="Enter Your Email">
+                            <button class="submit" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_down container">
+                    <div class=" footer_bottom_left">
+                        <p>&copy;
+                            <script
+                                type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script>
+                            Brand All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="footer_bottom_right">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script defer src="https://kit.fontawesome.com/2be4383886.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/BasketComponent.js"></script>
+<script src="js/ProductComponent.js"></script>
+<script src="js/SearchComponent.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

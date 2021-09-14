@@ -1,0 +1,20 @@
+{
+    "amount": 63,
+    "countGoods": 2,
+    "contents": [
+        {
+            "id_product": 1,
+            "product_name": "Backpack",
+            "price": 26,
+            "quantity": 1,
+            "image": "img/product1.png"
+        },
+        {
+            "id_product": 3,
+            "product_name": "Man shorts",
+            "price": 37,
+            "quantity": 1,
+            "image": "img/product3.png"
+        }
+    ]
+}
