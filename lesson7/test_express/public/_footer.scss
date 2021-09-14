@@ -1,0 +1,166 @@
+.footer {
+    .footer_top_box {
+        height: 341px;
+        background-color: #222224;
+
+        .delivery {
+            @extend .flex;
+            padding-top: 103px;
+
+            .information {
+                align-items: $al-it;
+                text-align: center;
+
+                .footer_top_link {
+                    display: block;
+                    width: 360px;
+                    text-decoration: none;
+
+                    .footer_top_text {
+                        padding-top: 25px;
+                        font-family: $ff;
+                        color: #FBFBFB;
+
+                        .footer_top_head {
+                            padding-bottom: 16px;
+                            @include fs(20px, 400, 24px);
+                        }
+
+                        .footer_top_inf {
+                            @include fs(14px, 300, 17px);
+                        }
+                    }
+
+                    .footer_top_text_middle {
+                        padding-top: 19px;
+                        font-family: $ff;
+                        color: #FBFBFB;
+
+                        .footer_top_head {
+                            padding-bottom: 16px;
+                            @include fs(20px, 400, 24px);
+                        }
+
+                        .footer_top_inf {
+                            @include fs(14px, 300, 17px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_center {
+        width: 100%;
+        display: flex;
+        background-image: url(img/footer.png);
+        /*background-size: cover;*/
+        background-position: center;
+        align-items: $al-it;
+        justify-content: center;
+
+        .feedback {
+            width: 100%;
+            margin-top: 97px;
+            margin-bottom: 126px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: $al-it;
+
+            .footer_center_left {
+                display: flex;
+                flex-direction: column;
+                align-items: $al-it;
+                width: 360px;
+
+                .feedback_photo {
+                    align-self: center;
+                }
+
+                .footer_center_left_desc {
+                    padding-top: 20px;
+                    text-align: center;
+                    @include fs(20px, 400, 24px);
+                    color: #222224;
+                }
+            }
+
+            .footer_center_right {
+                display: flex;
+                align-items: $al-it;
+                flex-direction: column;
+                width: 557px;
+
+                .footer_center_right_head {
+                    @include fs(24px, 700, 40px);
+                    color: #222224;
+                }
+
+                .footer_center_right_desc {
+                    @include fs(18px, 400, 30px);
+                    color: #222224;
+                }
+
+                .feedback_submit {
+                    display: flex;
+                    padding-top: 32px;
+                    height: 49px;
+
+                    .email {
+                        width: 256px;
+                        border: 1px solid #E1E1E1;
+                        border-radius: 30px 0 0 30px;
+                        background: #E1E1E1;
+                        padding-left: 22px;
+                    }
+
+                    .submit {
+                        width: 100px;
+                        color: $color7F;
+                        border: 1px solid $color7F;
+                        border-radius: 0 30px 30px 0;
+                        background: $colorFF;
+
+                        &:hover {
+                            color: $colorFF;
+                            border: 1px solid $color7F;
+                            background: $color7F;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        height: 79px;
+        background-color: #222224;
+
+        .footer_down {
+            @extend .flex;
+            flex-direction: row;
+
+            .footer_bottom_left {
+                padding-top: 30px;
+                @include fs(16px, 400, 19px);
+                color: #FBFBFB;
+            }
+
+            .footer_bottom_right {
+                padding-top: 32px;
+
+                .fab {
+                    font-size: 20px;
+                    color: $colorFF;
+                    font-weight: 400;
+
+                    &:hover {
+                        color: $color7F;
+                        background-color: $colorFF;
+                    }
+                }
+            }
+        }
+    }
+}
