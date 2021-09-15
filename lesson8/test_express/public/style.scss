@@ -1,0 +1,301 @@
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    font-family: $ff;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin fs($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@import "top";
+@import "footer";
+
+.center {
+    background-image: url(img/sample.png);
+    background-repeat: no-repeat;
+    background-color: #F1E4E6;
+    @extend .flex;
+    flex-direction: row;
+
+    .center_none {
+        min-width: 800px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+        margin: 290px 331px 381px 63px;
+
+        .element {
+            width: 12px;
+            border: 1px solid #EF5B70;
+            background-color: #EF5B70;
+        }
+
+        .name {
+            width: 377px;
+            height: 93px;
+            padding-left: 16px;
+            @include fs(32px, 400, 38px);
+
+            .center_header {
+                font-family: $ff;
+                @include fs(48px, 900, 58px);
+            }
+
+            .center_text {
+                font-family: $ff;
+                @include fs(30px, 700, 37px);
+            }
+
+            .center_text_mini {
+                color: $color7F;
+            }
+        }
+    }
+}
+
+.menu {
+    margin-top: 65px;
+    margin-bottom: 96px;
+
+    .clothes_parent {
+        @extend .flex;
+
+        .clothes {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.2s;
+
+            &:hover {
+                box-shadow: 0 0 10px rgba(33, 22, 22, 0.7);
+                transform: scale(1.1);
+            }
+
+            &:hover .clothes_img {
+                filter: brightness(50%);
+            }
+
+            &:hover .accesories_img {
+                filter: brightness(20%);
+            }
+
+            .clothes_img {
+                width: 100%;
+                display: blp;
+            }
+
+            .clothes_text {
+                left: 103px;
+                bottom: 105px;
+                position: absolute;
+                max-width: 160px;
+                text-decoration: none;
+                @include fs(16px, 400, 19px);
+                color: $colorFF;
+            }
+
+            .clothes_text_for {
+                @include fs(24px, 700, 29px);
+                color: $color7F;
+            }
+        }
+    }
+
+    .accesories {
+        margin-top: 30px;
+
+        .clothes_mini {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.2s;
+
+            &:hover {
+                box-shadow: 0 0 10px rgba(33, 22, 22, 0.7);
+                transform: scale(1.1);
+            }
+
+            &:hover .accesories_img {
+                filter: brightness(20%);
+            }
+
+            .accesories_img {
+                width: 100%;
+                display: block;
+            }
+
+            .accesories_text {
+                left: 490px;
+                bottom: 65px;
+                position: absolute;
+                max-width: 160px;
+                text-decoration: none;
+                @include fs(16px, 400, 19px);
+                color: $colorFF;
+            }
+
+            .accesories_text_for {
+                @include fs(24px, 700, 29px);
+                color: $color7F;
+            }
+        }
+    }
+}
+
+.items_section {
+    text-align: center;
+
+    .items {
+        margin-bottom: 96px;
+
+        .items_header {
+            @include fs(30px, 400, 36px);
+            color: $color22;
+        }
+
+        .items_text {
+            margin-top: 6px;
+            margin-bottom: 48px;
+            @include fs(14px, 400, 17px);
+            color: #9f9f9f;
+        }
+
+        .products {
+            @extend .flex;
+            flex-wrap: wrap;
+
+            .product-item {
+                width: 360px;
+                position: relative;
+                margin-bottom: 30px;
+                background: #f8f8f8;
+
+                &:hover {
+                    box-shadow: 0 5px 8px rgba(58, 56, 56, 0.86);
+                }
+
+                &:hover .product-img {
+                    filter: brightness(50%);
+                }
+
+                &:hover .buy-btn {
+                    display: flex;
+                }
+
+                .product-img {
+                    width: 100%;
+                }
+
+                .desc {
+                    padding-top: 25px;
+                    padding-left: 18px;
+                    text-align: left;
+
+                    .product-title {
+                        margin-bottom: 13px;
+                        @include fs(18px, 500, 15px);
+                        color: $color00;
+                    }
+
+                    .product-desc {
+                        margin-bottom: 18px;
+                        @include fs(14px, 300, 17px);
+                        color: #5D5D5D;
+                        text-transform: uppercase;
+                    }
+
+                    .product-price {
+                        margin-bottom: 20px;
+                        @include fs(16px, 400, 19px);
+                        color: $color7F;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .buy-btn {
+                    display: none;
+                    position: absolute;
+                    width: 25%;
+                    margin-left: 120px;
+                    padding: 8px;
+                    top: 189px;
+                    justify-content: center;
+                    text-align: center;
+
+                    &:hover {
+                        position: absolute;
+                        box-shadow: 0 0 10px $colorFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .items_button_form {
+        margin-top: 18px;
+
+        .items_button {
+            padding: 14px 39px 14px 39px;
+            border: 1px solid #FF6A6A;
+            background: $colorFF;
+
+            &:hover {
+                background-color: $color7F;
+            }
+
+            &:hover .items_button_text {
+                color: $colorFF;
+            }
+        }
+
+        .items_button_text {
+            @include fs(16px, 400, 19px);
+            color: #FF6A6A;
+        }
+    }
+
+    .items_pagination {
+        width: 283px;
+        height: 31px;
+        margin-top: 48px;
+        margin-left: 414px;
+        border: 1px solid #EBEBEB;
+        border-radius: 5px;
+        padding-top: 12px;
+        padding-left: 16px;
+
+        .page_paginat {
+            text-decoration: none;
+            font-family: $ff;
+            @include fs(16px, 300, 19px);
+            color: $color00;
+            padding-left: 18px;
+
+            &:last-of-type {
+                padding-right: 18px;
+            }
+
+            &:hover {
+                color: #EF5B70;
+            }
+        }
+    }
+}
